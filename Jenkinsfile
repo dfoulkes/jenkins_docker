@@ -7,20 +7,31 @@ pipeline {
   stages {
 
     stage('build'){
-       sh './install.sh' 
-       sh 'docker-compose build'
+        steps{
+            sh './install.sh' 
+            sh 'docker-compose build'
+        }
     }
 
     stage('test'){
-       sh 'docker-compose up -d'
+        steps{
+            sh 'docker-compose up -d'
+        }
+       
     }
    
     stage('verify'){ 
-       sh 'echo "verify build here."'
+         steps{
+             sh 'echo "verify build here."'
+         }
+       
     } 
 
-    stage('version'){
-       sh 'echo "update version in git here."'
+    stage('version'){ 
+        steps{
+            sh 'echo "update version in git here."'
+        }
+       
     }
 
   }

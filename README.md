@@ -8,8 +8,12 @@ I found myself with a need to be able to reset Jenkins quickly as well as record
 and thus avoid large file / repo size limitiations from git providers as well as improve 
 network performance during a commit.
 
-# Installing
- - run the install.sh script
+# Installing / Environment Setup
+ - installs docker-compose if needed
+ - creates the working directory for `jenkins home` and for the compose file
+ ```
+  ./install.sh
+ ```
 
 
 # Stop container

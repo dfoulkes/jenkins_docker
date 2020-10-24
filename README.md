@@ -1,4 +1,4 @@
-# Jenkins On The Go
+# Jenkins Docker Compose 
 
 ## Purpose 
 
@@ -12,7 +12,12 @@ network performance during a commit.
  - run the install.sh script
 
 
-# Running Jenkins Local Development
+# Stop container
+ - from this directory run 
+   ```
+     docker-compose down
+   ```
+# Start container (After previosuly installing)
  - from this directory run 
    ```
      docker-compose up -d

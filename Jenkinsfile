@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'docker/compose:latest'
+            image 'jenkins/agent:latest'
         }
   }
   stages {

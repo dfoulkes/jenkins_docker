@@ -2,7 +2,7 @@
 
 #install docker compose
 
-if ! command -v COMMAND &> /dev/null
+if [ ! command -v docker-compose &> /dev/null ]
 then
     echo "installing docker compose"
     sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

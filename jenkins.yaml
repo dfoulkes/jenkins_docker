@@ -1,0 +1,34 @@
+
+jenkins:
+    numExecutors: 2
+    remotingSecurity:
+      enabled: true
+    authorizationStrategy:
+      loggedInUsersCanDoAnything:
+        allowAnonymousRead: false
+    crumbIssuer:
+      standard:
+        excludeClientIPFromCrumb: false
+    securityRealm:
+      local:
+        allowsSignup: false
+        enableCaptcha: false
+        users:
+        - id: "testuser"
+          password: "testuser"
+        - id: "admin"
+          password: "admin"
+  
+  unclassified:
+    location:
+      adminAddress: "address not configured yet <nobody@nowhere>"
+      url: "http://localhost:8081/"
+    mailer:
+      charset: "UTF-8"
+      useSsl: false
+  
+  tool:
+    git:
+      installations:
+      - home: "git"
+        name: "Default"

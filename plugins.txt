@@ -2,6 +2,7 @@ ace-editor
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api
 authentication-tokens
+bouncycastle-api 
 blueocean
 blueocean-autofavorite
 blueocean-bitbucket-pipeline

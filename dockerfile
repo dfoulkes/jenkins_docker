@@ -13,14 +13,17 @@ RUN set -eux; \
      "deb [arch=amd64] https://download.docker.com/linux/debian \
      $(lsb_release -cs) \
      stable"; \
+  apt-get install software-properties-common; \  
   apt-get update; \
+  #apt-add-repository --yes --update ppa:ansible/ansible; \
+  apt-get install -y ansible; \
   apt-get install -y --no-install-recommends \
     docker-ce-cli \
     containerd.io; \
   rm -rf /var/lib/apt/lists/*
   
 USER jenkins
-                      
+                    
 ####### INSTALL PLUGINS #########
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt                    
 RUN /usr/local/bin/install-plugins.sh \

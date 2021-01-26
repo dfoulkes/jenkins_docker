@@ -1,4 +1,5 @@
 ace-editor
+ansible
 antisamy-markup-formatter
 apache-httpcomponents-client-4-api
 authentication-tokens
@@ -28,6 +29,7 @@ branch-api
 build-timeout
 cloudbees-bitbucket-branch-source
 cloudbees-folder
+command-launcher
 configuration-as-code
 configuration-as-code-groovy
 credentials
@@ -48,11 +50,13 @@ gradle
 handy-uri-templates-2-api
 htmlpublisher
 jackson2-api
+jdk-tool
 jenkins-design-language
 jira
 jquery-detached
 jsch
 junit
+ldap
 mailer
 matrix-auth
 matrix-project
